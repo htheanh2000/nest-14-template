@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { UserModule } from './user/user.module';
 import { User } from './user/entities/user.entity';
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 
 @Module({
